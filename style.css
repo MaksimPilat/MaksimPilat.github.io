@@ -421,6 +421,10 @@ p{
     width: 100%;
 }
 
+.portfolio a{
+    color: var(--red);
+}
+
 
 .education__body{
     margin-top: 40px;
