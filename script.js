@@ -40,7 +40,7 @@ window.onscroll = () => {
         }), {threshold: .5}
     )
     observer.observe(document.querySelector('.portfolio__preview'));
-}())
+}());
 
 
 (function slider(){
