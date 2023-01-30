@@ -1,3 +1,4 @@
+
 window.onload = () => document.querySelector('.wrapper').classList.add('wrapper_show');
 
 
@@ -26,7 +27,7 @@ function fixHeader(){
 window.onscroll = () => {
     fixHeader();
     scrollIndicator();
-};
+}
 
 
 (function showContent(){
@@ -93,3 +94,5 @@ document.querySelectorAll('a[href*="#"]').forEach((item) => {
 
 
 document.querySelector('.footer__up').onclick = () => window.scrollTo(0, 0);
+
+
