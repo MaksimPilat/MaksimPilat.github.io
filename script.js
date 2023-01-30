@@ -1,4 +1,3 @@
-
 window.onload = () => document.querySelector('.wrapper').classList.add('wrapper_show');
 
 
@@ -27,7 +26,7 @@ function fixHeader(){
 window.onscroll = () => {
     fixHeader();
     scrollIndicator();
-}
+};
 
 
 (function showContent(){
