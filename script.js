@@ -30,6 +30,19 @@ window.onscroll = () => {
 }
 
 
+(function showContent(){
+    const observer = new IntersectionObserver((entries, observer) => 
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('intersacting');
+                observer.unobserve(entry.target);
+            }
+        }), {threshold: .5}
+    )
+    observer.observe(document.querySelector('.portfolio__preview'));
+}())
+
+
 (function slider(){
     const sliderBody = document.querySelector('.slider__body');
     const sliderLine = document.querySelector('.slider__line');
