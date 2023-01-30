@@ -414,15 +414,14 @@ p{
 
 .portfolio__preview{
     grid-area: image;
-    min-width: 250px
+    min-width: 250px;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: 1s;
 }
 
 .portfolio__preview img{
     width: 100%;
-}
-
-.portfolio a{
-    color: var(--red);
 }
 
 
@@ -591,6 +590,12 @@ p{
 .social__item-footer{
     filter: invert();
     opacity: .9;
+}
+
+
+.intersacting{
+    opacity: 1;
+    transform: translateY(0%);
 }
 
 
